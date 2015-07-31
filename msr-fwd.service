@@ -1,0 +1,11 @@
+[Unit]
+Description=Magnetic Stripe Reader Forwarder
+After=syslog.target
+
+[Service]
+PIDFile=/var/run/msr-fwd.pid
+ExecStart=/usr/local/bin/msr-fwd.sh
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

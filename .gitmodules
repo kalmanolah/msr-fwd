@@ -1,0 +1,3 @@
+[submodule "msr-cli"]
+	path = msr-cli
+	url = git@github.com:kalmanolah/msr-cli.git
