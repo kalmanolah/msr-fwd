@@ -14,6 +14,7 @@ Please ensure that [`fpm`][2] is installed if you want to build the package.
 Debian & derivatives:
 
 ```
+git submodule update --init
 ./package.sh
 dpkg -i python-msr-cli_0.0.1-1_all.deb
 dpkg -i msr-fwd_0.0.1-1_all.deb
@@ -25,6 +26,7 @@ systemctl start msr-fwd
 RH/CentOS & derivatives:
 
 ```
+git submodule update --init
 ./package.sh
 rpm -Uvh python-msr-cli-0.0.1-1_noarch.rpm
 rpm -Uvh msr-fwd-0.0.1-1.noarch.rpm
